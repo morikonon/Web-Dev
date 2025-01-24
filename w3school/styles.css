@@ -1,0 +1,15 @@
+body{
+	background-color: black;
+}
+h1{
+	color:aqua;
+	font-size: 20px;
+	padding:30px;
+}
+p{
+	color:aqua;
+	font-family:cursive;
+	font-size:20px;
+	margin:50px;
+	border:20px;
+}
