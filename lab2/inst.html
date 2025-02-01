@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Instagram</title>
+	<style>
+		.bluePhone{
+			color :rgb(0,100,255);
+			font-size:50px ;
+			position:absolute;
+			left:250px;
+			top:270px;
+			
+		}
+
+		body{
+			background-color: rgb(230,230,230);
+		}
+		.textClass{
+			position: absolute;
+			left:250px;
+			top:300px;
+			font-size: 28px;
+		}	
+		.btn{
+			color:white;
+			position: absolute;
+			top:125px;
+			background-color: rgb(0,100,255);
+			border:none;
+			border-radius: 5px;
+			width: 360px;    
+			left:20px;   
+  			height: 40px; 
+			justify-content: center;
+			font-size:14px;
+		}
+		.btn:active{
+			transform:scale(0.95);
+		}
+		.Box{
+			position: absolute;	
+			left:800px;
+			top:200px;
+			width: 400px;
+			height: 275px;
+			background-color: white;
+			border-radius: 5px;
+		}
+		.password{
+			color:rgb(0,100,255);
+			font-size: 15px;
+			position:absolute;
+			left:147px;
+			top:167px;
+		}
+		.password:hover{
+			border-bottom: 1px solid rgb(0,100,255);
+		}
+		.hrClass {
+			margin-top: 210px;    
+			border-top:0.5px solid #666;
+		}
+		.auth{
+			position: absolute;
+			background-color: rgb(100, 255, 103);
+			color:white;
+			border:none;
+			justify-content: center;	
+			border-radius: 2px;
+			/* width:20px;*/
+			height: 35px; 	
+			left:145px;
+
+		}
+		.auth:active{
+			transform: scale(0.95);
+		}
+		.inputClass{
+			width: 360px;
+			height: 37px;
+			position: absolute;
+			left:20px;
+			top:15px;
+			border:0.1px solid #666;
+			text-align: justify;
+			border-radius: 6px;;
+		}
+		.passwordClass{
+			width: 360px;
+			height: 37px;	
+			position: absolute;
+			left:20px;
+			top:65px;
+			border:0.1px solid #666;
+			text-align: justify;
+			border-radius:6px;
+		}
+		.textOnBlock{
+			font-size:15px;
+			margin-left:805px;
+			margin-top:500px;
+		}
+	</style>
+
+</head>
+<body>
+	<b class = "bluePhone">facebook</b>
+	<p class = "textClass">Facebook помогает вам всегда <br> оставаться на связи и общаться со <br> своими знакомыми.</p>
+	<div class = "Box">
+		<input class="inputClass" type="text" name="username" placeholder="Электронный адрес или номер телефона" required>
+		<input class="passwordClass" type="text" name="username" placeholder="Пароль" required>
+		<button class="btn">Вход</button>
+		<p class="password">Забыли пароль?</p>
+		<hr class="hrClass">
+		<button class="auth">Создать аккаунт</button>>
+	</div>
+	<p class = "textOnBlock"><b >Создать Страницу </b>знаменитости,музыкальной группы <br> или компании.</p>
+</body>
+</html>
