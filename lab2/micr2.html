@@ -21,11 +21,18 @@
             font-size: 24px;
             font-weight: bold;
         }
+        nav {
+            display: flex;
+            gap: 20px; 
+            align-items: center;
+        }
         nav a {
-            margin: 0 15px;
             text-decoration: none;
             color: black;
             font-size: 14px;
+        }
+        .textDecor:hover {
+            text-decoration: underline;
         }
         .banner {
             background: url("4.png") no-repeat center center/cover;
@@ -37,7 +44,7 @@
             font-size: 36px;
             font-weight: bold;
         }
-
+    
         .products {
             display: flex;
             justify-content: space-around;
@@ -58,16 +65,20 @@
             padding: 20px;
             margin-top: 20px;
         }
+        .mainDivTextClass{
+            text-decoration: none;
+            color:black;
+        }
     </style>
 </head>
 <body>
     <header>
-        <div class="logo">Microsoft</div>
+        <div class="logo"><a href = "file:///Users/muhameddaniar/Documents/kbtu/4semester/Web-Dev/lab2/micr2.html#" target="_blank"><p class = "mainDivTextClass">Microsoft</p></a></div>   
         <nav>
-            <a href="#">Microsoft 365</a>
-            <a href="#">Surface</a>
-            <a href="#">Xbox</a>
-            <a href="#">Support</a>
+            <a href="https://www.microsoft.com/ru-ru/microsoft-365?market=ru" target="_blank"><p class="textDecor">Microsoft 365<p></a>
+            <a href="#https://www.microsoft.com/en-us/surface " target="_blank"><p class = "textDecor">Surface</p></a>
+            <a href="https://www.xbox.com/ru-RU" target = "_blank"><p class = "textDecor">Xbox</p></a>
+            <a href="https://support.microsoft.com/en-us" target = "_blank"><p class = "textDecor">Support</p></a>
         </nav>
     </header>
     <div class="banner">Welcome to Microsoft</div>
