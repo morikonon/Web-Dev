@@ -1,0 +1,46 @@
+<div>
+  <div>
+    <nav class="navi">
+      <ul>
+        <li><img class="photaKaspi" src="./assets\kaspi.png" alt=""></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><div class = 'category-buttons'>
+          <label for="category">Выбери категорию:</label>
+          <select class="select-category" (change) = "selectCategory($event)">
+            <option *ngFor = "let category of categories" [value]="category">
+              {{category}}
+            </option>
+          </select>
+        </div></li>
+
+      </ul>
+    </nav>
+  </div>
+
+ 
+
+  <div class="products-container">
+    <div *ngFor="let product of getfilteredProducts()" class="product-card">
+      <img [src]="product.imageUrls[0]" alt="{{ product.name }}">
+
+
+
+      <h3>{{ product.name }}</h3>
+      <p>{{ product.description }}</p>
+      <p>⭐ {{ product.rating }}</p>
+      <p>❤️ {{product.likes}}</p>
+
+      <a class ="details-button" [href]="product.link" target="_blank">Подробнее</a><br>
+
+      <button class="like" (click) = "likeProduct(product.id)">❤️</button><br>
+      <button class="remove" (click) = "removeProduct(product.id)">🗑 Удалить</button>
+    
+      <div class = 'share-buttons'>
+        <button (click)="shareProduct(product.link, 'whatsapp')">📲 Поделиться в WhatsApp</button>
+        <button (click)="shareProduct(product.link, 'telegram')">📩 Поделиться в Telegram</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,245 @@
+
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.catalog-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 20px 0;
+  color: #007bff;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-shadow: 1px 1px 3px rgba(146, 19, 19, 0.2);
+}
+.category-buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #ffffff;
+  padding: 10px 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.category-buttons label {
+  font-size: 18px;
+  font-weight: 600;
+  color: #007bff;
+}
+
+.select-category {
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 16px;
+  font-weight: 600;
+  background: #fff;
+  color: #007bff;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  outline: none;
+}
+
+.select-category:hover {
+  background: #007bff;
+  color: white;
+}
+
+.select-category:focus {
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+.select-category option {
+  background: white;
+  color: #333;
+  font-weight: 500;
+}
+
+
+.category-a{
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #090202;
+  border-radius: 10px;
+
+}
+.navi {
+  height: auto;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background: linear-gradient(145deg, #ffffff, #ffffff);
+  padding: 15px 15px;
+  box-shadow: 0 5px 6px rgba(119, 105, 105, 0.2);
+  border-radius: 5px;
+  
+}
+
+.navi ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+.navi li {
+  margin: 0 15px;
+  font-weight: 1000;
+  font-size: 20px;
+  color: #000000;
+}
+
+.navi a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 800;
+  color: rgb(0, 0, 0);
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.navi a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+.photaKaspi{
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  margin-right:700px;
+
+}
+
+
+.product-card {
+  width: 260px;
+  border-radius: 15px;
+  padding: 16px;
+  text-align: center;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+.product-card img {
+  width: 150px;
+
+  height: 150px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover img {
+  transform: scale(1.15);
+}
+
+
+.details-button {
+  display: inline-block;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.4s ease, transform 0.2s ease;
+}
+
+.details-button:hover {
+  background: linear-gradient(135deg, #0056b3, #004094);
+  transform: scale(1.05);
+}
+
+
+.share-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+
+.share-buttons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #00c853, #009624);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.share-buttons button:hover {
+  background: linear-gradient(135deg, #009624, #006400);
+  transform: scale(1.05);
+}
+
+
+.share-buttons button:active, .details-button:active {
+  transform: scale(0.95);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+.remove{
+  display: flex;
+  margin-left: 86px;
+  margin-top: 15px;
+  align-items:end;
+  justify-content:end;
+  background: linear-gradient(135deg, #ff4508, #431201);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+.like{
+  display: flex;
+  align-items: center;
+  width: 50px;
+  margin-left: 200px;
+  margin-top: -69px;
+  justify-content: center;
+  background: linear-gradient(135deg, #ffffff, #ebebeb);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+.like:hover{
+  background: linear-gradient(135deg, #e80e06, #db1f06);
+  transform: scale(1.05);
+}
