@@ -1,0 +1,11 @@
+<main class="album-list-container">
+    <h2 class="album-list-title">Album List</h2>
+
+    <ul class="album-list">
+        <li *ngFor="let album of albums" class="album-item">
+            <a [routerLink]="['/albums', album.id]" class="album-link">
+                <span class="album-id">#{{ album.id }}</span> - <span class="album-title">{{ album.title }}</span>
+            </a>
+        </li>
+    </ul>
+</main>

@@ -1,0 +1,95 @@
+.album-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 24px;
+    border-radius: 12px;
+    background-color: #f8fafc;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.album-title {
+    font-size: 28px;
+    color: #1e293b;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.album-info p {
+    font-size: 18px;
+    color: #334155;
+    margin: 8px 0;
+}
+
+.album-edit {
+    margin-top: 20px;
+}
+
+.album-edit label {
+    font-size: 16px;
+    color: #475569;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.album-edit input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    transition: border-color 0.3s ease;
+}
+
+.album-edit input:focus {
+    outline: none;
+    border-color: #4f46e5;
+}
+
+.save-btn {
+    padding: 10px 20px;
+    background-color: #4f46e5;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.save-btn:hover {
+    background-color: #4338ca;
+    transform: translateY(-2px);
+}
+
+.back-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    background-color: #1e293b;
+    color: #f1f5f9;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-btn:hover {
+    background-color: #0f172a;
+    transform: translateY(-2px);
+}
+
+.view-photos a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #10b981;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.view-photos a:hover {
+    background-color: #059669;
+}
