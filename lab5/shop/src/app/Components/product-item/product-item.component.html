@@ -1,0 +1,16 @@
+<div class = "product-item">
+	<div class = "product-content">
+		<div class = "product-image">
+			<img [src] = "product1.imageUrl" alt = {{product1.name}}>
+		</div>
+		<div class = "product-details">
+			<h3>{{product-name}}</h3>
+			<p>{{product1.price}}</p>
+			<p>{{product1.description}}</p>
+			<p>Likes : {{product1.likes}}</p>
+			<button (onclick) = "likeProduct()" id = "like-button">Like</button>
+			<button (onclick) = "removeProduct()" id = "remove=button">Remove</button>
+			<button (onclick) = "favoriteProduct()" id = "favorite-button">
+		</div>
+	</div>
+</div>

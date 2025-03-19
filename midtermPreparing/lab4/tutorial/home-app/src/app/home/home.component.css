@@ -1,0 +1,12 @@
+button{
+	width: 100px;
+	height:30px;
+	background-color: darkturquoise;
+	border:1px solid gray;
+}
+input{
+	width: 200px;
+	height:30px;
+	border:1px solid gray;
+	padding-left: 10px;
+}
